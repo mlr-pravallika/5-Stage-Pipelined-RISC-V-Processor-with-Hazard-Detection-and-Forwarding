@@ -63,21 +63,46 @@ This project demonstrates concepts of:
 
 
 ✅ Complete 5-Stage Pipeline Architecture.
+
+
 ✅ IF, ID, EX, MEM, WB stages.
+
+
 ✅ Hazard Detection Unit (HDU).
+
+
 ✅ Forwarding Unit.
+
+
 ✅ Pipeline Registers.
+
+
 ✅ ALU Operations.
+
+
 ✅ Register File.
+
+
 ✅ Instruction Memory.
+
+
 ✅ Data Memory.
+
+
 ✅ Pipeline Synchronization.
+
+
 ✅ Waveform Verification using EPWave.
+
+
 ✅ Modular Verilog HDL Design.
+
+
 ✅ Recruiter-Ready Documentation.
 
 
 🧠 Problem Statement
+
 
 In pipelined processors, multiple instructions execute simultaneously across different stages.
 
@@ -137,16 +162,16 @@ Overall 5-Stage Pipeline Flow
 
 
 Instruction Fetch (IF)
-
+        |
         ↓
 Instruction Decode (ID)
-
+        |
         ↓
 Execute (EX)
-
+        |
         ↓
 Memory Access (MEM)
-
+        |
         ↓
 Write Back (WB)
 
@@ -177,25 +202,36 @@ Module	                      |  Function
 
 Program Counter (PC)	      |  Maintains instruction address
 
+
 Instruction Memory	      | Stores instructions
+
 
 Register File                 |	Stores processor registers
 
+
 Control Unit	              | Generates control signals
+
 
 ALU	                      | Performs arithmetic/logical operations
 
+
 Data Memory	              | Handles memory operations
+
 
 IF/ID Register	              | Stores IF stage outputs
 
+
 ID/EX Register	              | Stores decode stage outputs
+
 
 EX/MEM Register	              | Stores execute stage outputs
 
+
 MEM/WB Register	              | Stores memory stage outputs
 
+
 Hazard Detection Unit         |	Detects data hazards
+
 
 Forwarding Unit	              | Resolves pipeline dependencies
 
@@ -232,10 +268,12 @@ Hazard Logic
 
 If:
 
+
 ID/EX.Rd == IF/ID.Rs1 or IF/ID.Rs2
 
 
 Then:
+
 
 stall = 1
 
@@ -257,9 +295,12 @@ Benefits:
 
 ✅ Reduces pipeline stalls
 
+
 ✅ Improves performance
 
+
 ✅ Maintains correct execution
+
 
 📊 EPWave Simulation
 
@@ -377,21 +418,30 @@ Signal	                  |      Purpose
 
 pc_current	          |  Current program counter
 
+
 pc_next	                  |  Next instruction address
+
 
 instruction               |	Current instruction
 
+
 ifid_instruction          |	IF/ID pipeline instruction
+
 
 idex_read_data1	          |  Source operand 1
 
+
 idex_read_data2           |	Source operand 2
+
 
 alu_result                |	ALU output
 
+
 memwb_read_data           |	Memory read output
 
+
 forwardA	          |  Forwarding control signal
+
 
 forwardB	          |  Forwarding control signal
 
@@ -404,13 +454,18 @@ forwardB	          |  Forwarding control signal
   
 Verilog HDL	    q       |   Hardware design
 
+
 RISC-V Architecture	    |   Processor ISA
+
 
 EDA Playground	            |   Online simulation
 
+
 Icarus Verilog	            |   Verilog compiler
 
+
 EPWave	                    |    Waveform visualization
+
 
 GitHub                      | 	Version control & documentation
 
@@ -420,32 +475,61 @@ GitHub                      | 	Version control & documentation
 
 5-Stage-Pipelined-RISC-V-Processor-with-Hazard-Detection-and-Forwarding/
 |
+|
 ├── rtl/
+|
 │   ├── alu.v
+|   |
 │   ├── pc.v
+|   |
 │   ├── instruction_memory.v
+|   |
 │   ├── register_file.v
+|   |
 │   ├── control_unit.v
+|   |
 │   └── processor.v
+|
 │
 ├── testbench/
+|
 │   ├── alu_tb.v
+|   |
+|   | 
 │   ├── pc_tb.v
+|   |
+|   | 
 │   ├── instruction_memory_tb.v
+|   |
+|   | 
 │   ├── register_file_tb.v
+|   |
+|   | 
 │   ├── control_unit_tb.v
+|   |
+|   |
 │   └── processor_tb.v
 |
+|
 ├── docs/
+|
+|
 │   ├── architecture.md
+|   | 
+|   |   
 │   ├── module_explanation.md
+|   |
+|   |
 │   └── verification.md
 │
 ├── images/
 |
+|
 ├── screenshots/
+|
 │
 ├── waveforms/
+|
 │
 └── README.md
 
