@@ -160,20 +160,19 @@ These mechanisms improve:
 Overall 5-Stage Pipeline Flow
 
 
-
-Instruction Fetch (IF)
-        |
-        ↓
-Instruction Decode (ID)
-        |
-        ↓
-Execute (EX)
-        |
-        ↓
-Memory Access (MEM)
-        |
-        ↓
-Write Back (WB)
+       Instruction Fetch (IF)
+       
+              ↓
+       Instruction Decode (ID)
+        
+              ↓
+         Execute (EX)
+        
+              ↓
+       Memory Access (MEM)
+        
+              ↓
+        Write Back (WB)
 
 
 ## 📘 Pipeline Stages
