@@ -7,41 +7,41 @@ Verilog HDL implementation of a complete 5-stage pipelined RISC-V processor feat
 This project implements a complete 5-stage pipelined RISC-V processor using Verilog HDL.
 
 The processor supports pipelined instruction execution with proper handling of data hazards through:
-• Hazard Detection Unit (HDU)
-• Forwarding Unit
-• Pipeline registers
-• Control logic
-• ALU operations
-• Instruction & Data Memory
+• Hazard Detection Unit (HDU).
+• Forwarding Unit.
+• Pipeline registers.
+• Control logic.
+• ALU operations.
+• Instruction & Data Memory.
 
 The design was verified using:
-• EDA Playground
-• Icarus Verilog
-• EPWave
+• EDA Playground.
+• Icarus Verilog.
+• EPWave.
 
 This project demonstrates concepts of:
-• Computer Architecture
-• Pipeline Processing
-• Hazard Handling
-• Data Forwarding
-• RTL Design
-• Digital System Verification
+• Computer Architecture.
+• Pipeline Processing.
+• Hazard Handling.
+• Data Forwarding.
+• RTL Design.
+• Digital System Verification.
 
 ✨ Features
 
-✅ Complete 5-Stage Pipeline Architecture
-✅ IF, ID, EX, MEM, WB stages
-✅ Hazard Detection Unit (HDU)
-✅ Forwarding Unit
-✅ Pipeline Registers
-✅ ALU Operations
-✅ Register File
-✅ Instruction Memory
-✅ Data Memory
-✅ Pipeline Synchronization
-✅ Waveform Verification using EPWave
-✅ Modular Verilog HDL Design
-✅ Recruiter-Ready Documentation
+✅ Complete 5-Stage Pipeline Architecture.
+✅ IF, ID, EX, MEM, WB stages.
+✅ Hazard Detection Unit (HDU).
+✅ Forwarding Unit.
+✅ Pipeline Registers.
+✅ ALU Operations.
+✅ Register File.
+✅ Instruction Memory.
+✅ Data Memory.
+✅ Pipeline Synchronization.
+✅ Waveform Verification using EPWave.
+✅ Modular Verilog HDL Design.
+✅ Recruiter-Ready Documentation.
 
 🧠 Problem Statement
 
@@ -68,8 +68,8 @@ Forwards ALU results from later stages to earlier stages to avoid unnecessary st
 
 These mechanisms improve:
 
-• Instruction throughput
-• Pipeline efficiency
+• Instruction throughput.
+• Pipeline efficiency.
 • Correct execution flow
 
 🏗️ Processor Architecture:
@@ -84,6 +84,7 @@ Execute (EX)
 Memory Access (MEM)
         ↓
 Write Back (WB)
+
 📘 Pipeline Stages:
 
 Stage | 	Description
@@ -136,8 +137,8 @@ stall = 1
 The Forwarding Unit reduces stalls by forwarding ALU results directly to dependent instructions.
 
 Forwarding Paths:
-• EX/MEM → EX Stage
-• MEM/WB → EX Stage
+• EX/MEM → EX Stage.
+• MEM/WB → EX Stage.
 
 Benefits:
 ✅ Reduces pipeline stalls
@@ -287,23 +288,23 @@ Using EDA Playground
 
 🎯 Key Learnings
 
-• Pipeline processor design
-• Verilog HDL implementation
-• Hazard handling techniques
-• Forwarding mechanisms
-• RTL verification
-• Waveform debugging
-• Computer architecture concepts
+• Pipeline processor design.
+• Verilog HDL implementation.
+• Hazard handling techniques.
+• Forwarding mechanisms.
+• RTL verification.
+• Waveform debugging.
+• Computer architecture concepts.
 
 🌟 Project Impact
 
 This project demonstrates practical knowledge of:
 
-• Computer Architecture
-• RTL Design
-• Digital Logic Design
-• Pipeline Hazard Handling
-• Processor Verification
+• Computer Architecture.
+• RTL Design.
+• Digital Logic Design.
+• Pipeline Hazard Handling.
+• Processor Verification.
 
 It showcases the ability to design and verify a modular pipelined processor using industry-relevant concepts.
 
@@ -315,12 +316,12 @@ Marri Lalitha Raga Pravallika
 
 This project demonstrates:
 
-✅ Verilog HDL proficiency
-✅ Understanding of pipelined processor architecture
-✅ Hazard detection implementation
-✅ Forwarding logic implementation
-✅ Simulation and verification skills
-✅ Strong documentation and modular design practices
+✅ Verilog HDL proficiency.
+✅ Understanding of pipelined processor architecture.
+✅ Hazard detection implementation.
+✅ Forwarding logic implementation.
+✅ Simulation and verification skills.
+✅ Strong documentation and modular design practices.
 
 
 
