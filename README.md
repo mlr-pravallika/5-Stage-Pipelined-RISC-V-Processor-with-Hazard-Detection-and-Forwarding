@@ -87,7 +87,7 @@ Write Back (WB)
 
 📘 Pipeline Stages:
 
-Stage | 	Description
+Stage     | 	Description
 IF	  |  Fetches instruction from instruction memory
 ID	  |  Decodes instruction and reads register values
 EX	  |  Performs ALU operations
