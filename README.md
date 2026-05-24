@@ -197,7 +197,7 @@ Writes result back to register file.
 ⚙️ Major Modules:
 
 
-Module	                      :  Function
+### Module & Function:
 
 
 Program Counter (PC)	      :  Maintains instruction address
@@ -413,7 +413,7 @@ Observed:
 📡 Observed Signals:
 
 
-Signal	                  :    Purpose
+### Signal & Purpose
 
 
 pc_current	          :  Current program counter
@@ -449,10 +449,10 @@ forwardB	          :  Forwarding control signal
 🛠️ Technologies Used
 
 
-  Technology                :	  Purpose
+ ### Technology  & Purpose
 
   
-Verilog HDL	    q       :   Hardware design
+Verilog HDL	         :   Hardware design
 
 
 RISC-V Architecture	    :  Processor ISA
@@ -470,68 +470,42 @@ EPWave	                    :    Waveform visualization
 GitHub                      : 	Version control & documentation
 
 
-📂 Project Folder Structure
+## 📁 Project Structure
 
-
-5-Stage-Pipelined-RISC-V-Processor-with-Hazard-Detection-and-Forwarding/
-|
-|
+```text
+5-Stage-Pipelined-RISC-V-Processor-with-Hazard-Detection-and-Forwarding
+│
 ├── rtl/
-|
-│   ├── alu.v
-|   |
 │   ├── pc.v
-|   |
 │   ├── instruction_memory.v
-|   |
 │   ├── register_file.v
-|   |
 │   ├── control_unit.v
-|   |
+│   ├── alu.v
+│   ├── data_memory.v
+│   ├── hazard_detection.v
+│   ├── forwarding_unit.v
+│   ├── pipeline_registers.v
 │   └── processor.v
-|
 │
 ├── testbench/
-|
-│   ├── alu_tb.v
-|   |
-|   | 
-│   ├── pc_tb.v
-|   |
-|   | 
-│   ├── instruction_memory_tb.v
-|   |
-|   | 
-│   ├── register_file_tb.v
-|   |
-|   | 
-│   ├── control_unit_tb.v
-|   |
-|   |
 │   └── processor_tb.v
-|
-|
+│
 ├── docs/
-|
-|
 │   ├── architecture.md
-|   | 
-|   |   
 │   ├── module_explanation.md
-|   |
-|   |
 │   └── verification.md
 │
 ├── images/
-|
-|
-├── screenshots/
-|
+│   ├── architecture.png
+│   ├── waveform.png
+│   └── forwarding_waveform.png
 │
 ├── waveforms/
-|
+│   └── simulation_results.vcd
 │
+├── LICENSE
 └── README.md
+```
 
 
 ▶️ How to Run
