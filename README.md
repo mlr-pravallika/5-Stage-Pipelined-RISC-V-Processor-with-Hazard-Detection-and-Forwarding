@@ -197,43 +197,43 @@ Writes result back to register file.
 ⚙️ Major Modules:
 
 
-Module	                      |  Function
+Module	                      :  Function
 
 
-Program Counter (PC)	      |  Maintains instruction address
+Program Counter (PC)	      :  Maintains instruction address
 
 
-Instruction Memory	      | Stores instructions
+Instruction Memory	      : Stores instructions
 
 
-Register File                 |	Stores processor registers
+Register File                 :	Stores processor registers
 
 
-Control Unit	              | Generates control signals
+Control Unit	              : Generates control signals
 
 
-ALU	                      | Performs arithmetic/logical operations
+ALU	                      : Performs arithmetic/logical operations
 
 
-Data Memory	              | Handles memory operations
+Data Memory	              : Handles memory operations
 
 
-IF/ID Register	              | Stores IF stage outputs
+IF/ID Register	              : Stores IF stage outputs
 
 
-ID/EX Register	              | Stores decode stage outputs
+ID/EX Register	              : Stores decode stage outputs
 
 
-EX/MEM Register	              | Stores execute stage outputs
+EX/MEM Register	              : Stores execute stage outputs
 
 
-MEM/WB Register	              | Stores memory stage outputs
+MEM/WB Register	              : Stores memory stage outputs
 
 
-Hazard Detection Unit         |	Detects data hazards
+Hazard Detection Unit         :	Detects data hazards
 
 
-Forwarding Unit	              | Resolves pipeline dependencies
+Forwarding Unit	              :  Resolves pipeline dependencies
 
 
 🧩 Architecture Diagram
@@ -413,61 +413,61 @@ Observed:
 📡 Observed Signals:
 
 
-Signal	                  |      Purpose
+Signal	                  :    Purpose
 
 
-pc_current	          |  Current program counter
+pc_current	          :  Current program counter
 
 
-pc_next	                  |  Next instruction address
+pc_next	                  :  Next instruction address
 
 
-instruction               |	Current instruction
+instruction               :	Current instruction
 
 
-ifid_instruction          |	IF/ID pipeline instruction
+ifid_instruction          :	IF/ID pipeline instruction
 
 
-idex_read_data1	          |  Source operand 1
+idex_read_data1	          :  Source operand 1
 
 
-idex_read_data2           |	Source operand 2
+idex_read_data2           :	Source operand 2
 
 
-alu_result                |	ALU output
+alu_result                :	ALU output
 
 
-memwb_read_data           |	Memory read output
+memwb_read_data           :	Memory read output
 
 
-forwardA	          |  Forwarding control signal
+forwardA	          :  Forwarding control signal
 
 
-forwardB	          |  Forwarding control signal
+forwardB	          :  Forwarding control signal
 
 
 🛠️ Technologies Used
 
 
-  Technology                | 	  Purpose
+  Technology                :	  Purpose
 
   
-Verilog HDL	    q       |   Hardware design
+Verilog HDL	    q       :   Hardware design
 
 
-RISC-V Architecture	    |   Processor ISA
+RISC-V Architecture	    :  Processor ISA
 
 
-EDA Playground	            |   Online simulation
+EDA Playground	            :   Online simulation
 
 
-Icarus Verilog	            |   Verilog compiler
+Icarus Verilog	            :   Verilog compiler
 
 
-EPWave	                    |    Waveform visualization
+EPWave	                    :    Waveform visualization
 
 
-GitHub                      | 	Version control & documentation
+GitHub                      : 	Version control & documentation
 
 
 📂 Project Folder Structure
