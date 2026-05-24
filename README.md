@@ -488,8 +488,13 @@ GitHub                      : 	Version control & documentation
 │   └── processor.v
 │
 ├── testbench/
-│   └── processor_tb.v
-│
+│   └── alu_tb.v
+│   ├──pc_tb.v
+|   ├──instruction_memory_tb.v
+|   ├──register_file_tb.v
+|   ├──control_unit_tb.v
+|   ├──processor_tb.v
+|    
 ├── docs/
 │   ├── architecture.md
 │   ├── module_explanation.md
@@ -500,6 +505,8 @@ GitHub                      : 	Version control & documentation
 │   ├── waveform.png
 │   └── forwarding_waveform.png
 │
+├── screenshots/
+|
 ├── waveforms/
 │   └── simulation_results.vcd
 │
