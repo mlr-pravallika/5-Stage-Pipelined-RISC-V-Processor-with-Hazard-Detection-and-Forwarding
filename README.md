@@ -369,7 +369,7 @@ The Forwarding Unit minimizes unnecessary stalls by forwarding ALU results direc
 
 ### Forwarding Unit Architecture:
 
-
+'''text
              ┌────────────────────┐
              │  Forwarding Unit   │
              └─────────┬──────────┘
@@ -383,7 +383,7 @@ The Forwarding Unit minimizes unnecessary stalls by forwarding ALU results direc
          |                           |
          └────────► ALU Inputs ◄─────┘
 
-         
+ '''        
 Forwarding Paths:
 
 
