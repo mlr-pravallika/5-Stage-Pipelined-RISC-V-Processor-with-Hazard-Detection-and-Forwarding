@@ -1,4 +1,4 @@
-🚀 5-Stage Pipelined RISC-V Processor with Hazard Detection and Forwarding
+### 🚀 5-Stage Pipelined RISC-V Processor with Hazard Detection and Forwarding
 
 Verilog HDL implementation of a complete 5-stage pipelined RISC-V processor featuring Hazard Detection Unit (HDU), Forwarding Unit, pipeline registers, and EPWave waveform verification using EDA Playground.
 
