@@ -226,7 +226,7 @@ These mechanisms improve:
             └─────────────────────┘
 
 
-Overall 5-Stage Pipeline Flow
+### Overall 5-Stage Pipeline Flow
 
 
        Instruction Fetch (IF)
@@ -278,31 +278,31 @@ Instruction Memory	      : Stores instructions
 Register File                 :	Stores processor registers
 
 
-Control Unit	              : Generates control signals
+Control Unit	      : Generates control signals
 
 
-ALU	                      : Performs arithmetic/logical operations
+ALU	                  : Performs arithmetic/logical operations
 
 
-Data Memory	              : Handles memory operations
+Data Memory	                  : Handles memory operations
 
 
-IF/ID Register	              : Stores IF stage outputs
+IF/ID Register	      : Stores IF stage outputs
 
 
-ID/EX Register	              : Stores decode stage outputs
+ID/EX Register	       : Stores decode stage outputs
 
 
-EX/MEM Register	              : Stores execute stage outputs
+EX/MEM Register	       : Stores execute stage outputs
 
 
-MEM/WB Register	              : Stores memory stage outputs
+MEM/WB Register	       : Stores memory stage outputs
 
 
-Hazard Detection Unit         :	Detects data hazards
+Hazard Detection Unit          :	Detects data hazards
 
 
-Forwarding Unit	              :  Resolves pipeline dependencies
+Forwarding Unit	       :  Resolves pipeline dependencies
 
 
 🧩 Architecture Diagram
@@ -317,7 +317,7 @@ Forwarding Unit	              :  Resolves pipeline dependencies
 ⚠️ Hazard Detection Unit (HDU)
 
 
-The Hazard Detection Unit monitors instruction dependencies between pipeline stages.
+The Hazard Detection Unit identifies data hazards occurring during instruction execution and stalls the pipeline whenever necessary to prevent incorrect execution. The Hazard Detection Unit monitors instruction dependencies between pipeline stages.
 
 
 Responsibilities
@@ -364,9 +364,26 @@ stall = 1
 🔄 Forwarding Unit
 
 
-The Forwarding Unit reduces stalls by forwarding ALU results directly to dependent instructions.
+The Forwarding Unit minimizes unnecessary stalls by forwarding ALU results directly between pipeline stages.
 
 
+### Forwarding Unit Architecture:
+
+
+             ┌────────────────────┐
+             │  Forwarding Unit   │
+             └─────────┬──────────┘
+                       │
+         ┌─────────────┴─────────────┐
+         │                           │
+         ▼                           ▼
+
+   EX/MEM Result              MEM/WB Result
+         │                           | 
+         |                           |
+         └────────► ALU Inputs ◄─────┘
+
+         
 Forwarding Paths:
 
 
