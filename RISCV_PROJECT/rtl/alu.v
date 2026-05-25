@@ -5,7 +5,7 @@ module alu(
     input [1:0] ALUControl,
     output reg [31:0] Result
 );
-
+    
 always @(*) begin
     case(ALUControl)
 
