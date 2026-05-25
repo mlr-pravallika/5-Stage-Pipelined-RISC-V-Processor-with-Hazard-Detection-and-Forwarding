@@ -332,7 +332,22 @@ Responsibilities
 • Prevent incorrect execution
 
 
-Hazard Logic
+### Hazard Unit Architecture:
+
+
+             ┌──────────────────┐
+             │ Hazard Detection │
+             │       Unit       │
+             └────────┬─────────┘
+                      │
+                 Generates
+                    Stall
+                      │
+                      ▼
+                Pipeline Control
+
+
+### Hazard Logic
 
 
 If:
